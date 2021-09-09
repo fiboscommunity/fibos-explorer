@@ -1,0 +1,90 @@
+/* 头部 */
+@import "../../App.less";
+
+.ant-layout-header {
+  position: fixed;
+  width: calc(100% - 32px);
+  z-index: 1;
+  background: @white;
+  padding: 0;
+  .ant-form {
+    line-height: 60px;
+  }
+  text-align: center;
+  margin-left: 16px;
+
+  .logo {
+    float: left;
+    padding-left: 100px;
+    padding-right: 60px;
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+
+  .ant-menu-horizontal {
+    width: 100%;
+    margin: auto;
+    height: 64px;
+    line-height: 64px;
+    border-bottom: none;
+  }
+  .smallmenuImg {
+    float: left;
+    width: 32px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .LronmanName {
+    margin-right: 10px;
+    color: @themeColor;
+    font-size: 12px;
+  }
+  .search {
+    width: 60%;
+    input {
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    button{
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    i{
+      margin-right: 10px;
+    }
+  }
+
+  .lanSelect{
+    .ant-select-selection{
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .ant-layout-header {
+    .search {
+      margin-left: 40px;
+      width: 125px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ant-layout-header {
+    .logo {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .search {
+      margin-left: 40px;
+      width: 150px;
+    }
+  }
+  .ant-menu-submenu-arrow {
+    right: 0 !important;
+  }
+}

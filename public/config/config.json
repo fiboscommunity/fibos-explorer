@@ -1,0 +1,12 @@
+{
+  "client": {
+    "chainId": "NODE_CHAIN_ID",
+    "hostname": "NODE_HOST_NAME",
+    "port": "NODE_PORT",
+    "protocol": "NODE_PROTOCOL",
+    "blockchain": "fibos",
+    "searchApi": "HISTORY_NODE_API"
+  },
+  "openAccount": false,
+  "checkAccount": "fibostestttt"
+}
